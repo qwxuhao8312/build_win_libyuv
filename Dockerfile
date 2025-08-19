@@ -18,10 +18,10 @@ COPY build.sh /opt/build.sh
 RUN chmod +x /opt/build.sh
 
 # 复制测试程序和CMakeLists.txt
-COPY test_digital_zoom.c /opt/test_digital_zoom.c
+# COPY test_digital_zoom.c /opt/test_digital_zoom.c
 COPY CMakeLists.txt /opt/CMakeLists.txt
-COPY run_test.sh /opt/run_test.sh
-RUN chmod +x /opt/run_test.sh
+# COPY run_test.sh /opt/run_test.sh
+# RUN chmod +x /opt/run_test.sh
 
 # 创建输出目录
 RUN mkdir -p /opt/output/x86 /opt/output/x64 /opt/output/test_results

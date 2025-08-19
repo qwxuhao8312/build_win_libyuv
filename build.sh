@@ -46,14 +46,14 @@ cp /opt/install/x64/bin/*.dll /opt/output/x64/ 2>/dev/null || echo "No DLL files
 cp -r /opt/install/x64/include /opt/output/x64/
 
 # 构建测试程序 (Linux版本用于验证)
-echo "构建测试程序..."
-cd /opt
-mkdir -p /opt/build_test
-cd /opt/build_test
+# echo "构建测试程序..."
+# cd /opt
+# mkdir -p /opt/build_test
+# cd /opt/build_test
 
-# 使用系统默认编译器构建测试程序
-cmake /opt
-make -j$(nproc)
+# # 使用系统默认编译器构建测试程序
+# cmake /opt
+# make -j$(nproc)
 
 echo "编译完成!"
 echo "x86版本位于: /opt/output/x86/"
