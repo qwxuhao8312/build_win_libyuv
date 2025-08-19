@@ -1,0 +1,12 @@
+# Build directories
+build/
+output/
+
+# VS Code
+.vscode/
+
+# CTags
+.vscode-ctags
+
+# Docker build cache
+.dockerignore
